@@ -1,25 +1,13 @@
-<h1>Burgers!</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Burgers!</h1>
+    <img src="https://i.chzbgr.com/original/875511040/h8EB4D6E9/">
+  </div>
+</div>
 
-<h2>Burgers that you've eaten!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burger-block eat=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Order Up!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block eat=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
+<div class="row">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-5" id="special-burger">
 <h2>Add a Special Burger</h2>
 <form class="create-form">
 
@@ -28,11 +16,47 @@
     <input type="text" id="ca" kind="kind">
   </div>
 
-  <div class="form-group">
+  <div class="form-group" id ="radio-button">
     <label for="eaten">Enter a burger you want to eat!</label><br>
-    <input type="radio" kind="eaten" value="1"><br>
-    <input type="radio" kind="eaten" value="0">
+    <input type="radio" kind="eaten" value="1">I want to eat this burger!<br>
+    <input type="radio" kind="eaten" value="0">I've eaten this burger before! 
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit" id="add-burger">Add Burger</button>
 </form>
+<br>
+  </div>
+</div>
+  
+
+
+<br>
+
+<div class="row">
+  <div class="col-lg-6">
+<h2>Order Up!</h2>
+<ol>
+  {{#each burgers}}
+    {{#if eaten}}
+      {{> burgers/burger-block eat=false}}
+    {{/if}}
+  {{/each}}
+</ol>
+  </div>
+
+<div class="col-lg-5">
+
+<h2>Burgers that you've eaten!</h2>
+
+<ol>
+  {{#each burgers}}
+    {{#unless eaten}}
+      {{> burgers/burger-block eat=true}}
+    {{/unless}}
+  {{/each}}
+</ol>
+
+</div>
+
+</div>
+<br>

@@ -1,19 +1,72 @@
+.clearfix::after {
+  clear: both
+}
+body {
+    background-color: rgb(188, 197, 201);
+    color: rgb(69, 69, 70);
+}
+h2 {
+  color: rgb(236, 203, 13);
+  text-shadow: 0 0 3px rgb(8, 0, 0), 0 0 5px rgb(202, 103, 90);
+}
+.jumbotron {
+    height: 350px;
+    align-content: center;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    color: rgb(236, 203, 13);
+    text-shadow: 0 0 3px rgb(8, 0, 0), 0 0 5px rgb(202, 103, 90);
+    background-image: url(../img/burger.jpeg);
+    background-color: rgb(47, 137, 179);
+    border: 5px solid rgb(250, 224, 109);
+}
+.display-4 {
+  padding: top 0px;
+  margin: top 0px;
+}
+img {
+  height: 300px;
+  border: 5px solid black;
+}
+.col-lg-6 {
+  float: left;
+  margin-left: 3%;
+  margin-bottom: 10px;
+  font-size: 15px;
+  background-color: rgb(212, 74, 171);
+  border: 5px solid rgb(250, 224, 109);
+}
+.col-lg-5 {
+    float: left;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    background-color: rgb(31, 182, 187);
+    border: 5px solid rgb(231, 143, 28);
+}
+#special-burger{
+  align-content: center;
+    text-align: center;
+}
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
+  padding: 5px;
+  margin: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+.form-group {
+  margin-bottom: 5px;
+}
+button {
+    background-color: rgb(202, 103, 90);
+}
+
   
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
