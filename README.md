@@ -4,7 +4,7 @@
 
 
 ## Check it out on Heroku!: 
-[Open Here](#herokuapp/ "Burger App")
+[Open Here](https://pure-earth-48134.herokuapp.com/ "Burger App")
 
 ## Code Example:
 
